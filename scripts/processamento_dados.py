@@ -78,6 +78,6 @@ class Dados:
 
         dados_combinados_tabela = self.transformando_dados_tabela()
 
-        with open(path, 'w') as file:
+        with open(path, 'w', newline='', encoding='utf-8') as file:
             writer = csv.writer(file)
             writer.writerows(dados_combinados_tabela)
